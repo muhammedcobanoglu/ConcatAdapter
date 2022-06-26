@@ -6,5 +6,8 @@ In the above solution, we have some problems. For example if you use this soluti
 
 To manage different views with an easy way, we can use Concat Adapter
 
+In the below example, we have 3 different views. There are header, body and footer. We can show and different views and change their positions easly. For example, if we want to change the header position with the footer position, we can only change order in the Concat Adapter like this;
+
+`val concatAdapter = ConcatAdapter(footerAdapter, bodyAdapter, headerAdapter)`
 
 ![concat_adapter](https://user-images.githubusercontent.com/9548399/175830586-9ffdc1c0-703a-4ceb-a6f7-56a2d2f317f0.png)

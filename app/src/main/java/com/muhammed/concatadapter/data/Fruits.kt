@@ -37,7 +37,7 @@ fun fruitList(resources: Resources): List<Fruit> {
         Fruit(
             fruitImage = R.drawable.ic_lemon,
             fruitName = resources.getString(R.string.lemon)
-        )/*,
+        ),
         Fruit(
             fruitImage = R.drawable.ic_watermelon,
             fruitName = resources.getString(R.string.watermelon)
@@ -49,6 +49,6 @@ fun fruitList(resources: Resources): List<Fruit> {
         Fruit(
             fruitImage = R.drawable.ic_pear,
             fruitName = resources.getString(R.string.pear)
-        )*/
+        )
     )
 }

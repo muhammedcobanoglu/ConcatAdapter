@@ -42,7 +42,7 @@ class HomeFragment : Fragment() {
         val bodyAdapter = BodyAdapter(fruitList)
         val footerAdapter = FooterAdapter()
 
-        val concatAdapter = ConcatAdapter(headerAdapter, bodyAdapter, footerAdapter)
+        val concatAdapter = ConcatAdapter(footerAdapter, bodyAdapter, headerAdapter)
         val layoutManager = LinearLayoutManager(activity)
         binding.mainList.layoutManager = layoutManager
         binding.mainList.addItemDecoration(
@@ -55,7 +55,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun onHeaderItemClicked(fruit: Fruit) {
-        var bundle = bundleOf("fruit" to fruit)
+        val bundle = bundleOf("fruit" to fruit)
         activity.goToDestination(TAG, bundle, R.id.action_homeFragment_to_detailFragment)
     }
 }

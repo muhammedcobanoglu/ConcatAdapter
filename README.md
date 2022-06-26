@@ -2,7 +2,7 @@
 
 There are many ways to show different views in a recyclerview but by using multiple view types in a recyclerview is a common idea.
 
-In the above solution, we have some problems. For example if you use this solution, you have to managing many view types.
+In the above solution, we have some problems. For example if you use this solution, you have to manage many view types.
 
 To manage different views with an easy way, we can use Concat Adapter
 
@@ -18,7 +18,7 @@ In the below example, we have 3 different views. There are header, body and foot
 
 `val concatAdapter = ConcatAdapter(footerAdapter, bodyAdapter, headerAdapter)`
 
-We can show and different views and change their positions easly. For example, if we want to change the header position with the footer position, we can only change order in the Concat Adapter like this;
+We can show different views and change their positions easily. For example, if we want to change the header position with the footer position, we can only change order in the Concat Adapter like this;
 
 `val concatAdapter = ConcatAdapter(footerAdapter, bodyAdapter, headerAdapter)`
 

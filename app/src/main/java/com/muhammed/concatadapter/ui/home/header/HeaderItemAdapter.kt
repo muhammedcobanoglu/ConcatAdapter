@@ -13,10 +13,6 @@ class HeaderItemAdapter(dataList: List<Fruit>, private val onClick: (Fruit) -> U
     RecyclerView.Adapter<HeaderItemAdapter.ViewHolder>() {
     private var dataList: List<Fruit> = arrayListOf()
 
-    companion object {
-        const val VIEW_TYPE = 1
-    }
-
     init {
         this.dataList = dataList
     }
@@ -40,8 +36,4 @@ class HeaderItemAdapter(dataList: List<Fruit>, private val onClick: (Fruit) -> U
     }
 
     override fun getItemCount(): Int = dataList.size
-
-    override fun getItemViewType(position: Int): Int {
-        return VIEW_TYPE
-    }
 }

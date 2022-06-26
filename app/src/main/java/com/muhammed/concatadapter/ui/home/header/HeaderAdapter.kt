@@ -13,10 +13,6 @@ import com.muhammed.concatadapter.databinding.ItemParentHeaderBinding
 class HeaderAdapter(private val adapter: HeaderItemAdapter) :
     RecyclerView.Adapter<HeaderAdapter.ViewHolder>() {
 
-    companion object {
-        const val VIEW_TYPE = 1
-    }
-
     class ViewHolder(private val binding: ItemParentHeaderBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(adapter: HeaderItemAdapter) {
             val context = binding.root.context
@@ -43,8 +39,4 @@ class HeaderAdapter(private val adapter: HeaderItemAdapter) :
     }
 
     override fun getItemCount(): Int = 1
-
-    override fun getItemViewType(position: Int): Int {
-        return VIEW_TYPE
-    }
 }

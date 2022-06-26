@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ConcatAdapter</string>
+
+    <string name="apricot">Apricot</string>
+    <string name="apple">Apple</string>
+    <string name="avocado">Avocado</string>
+    <string name="cherry">Cherry</string>
+    <string name="grapes">Grapes</string>
+    <string name="blueberry">Blueberry</string>
+    <string name="lemon">Lemon</string>
+    <string name="watermelon">Watermelon</string>
+    <string name="strawberry">Strawberry</string>
+    <string name="pear">Pear</string>
+
+    <string name="header_text">Header Text</string>
+    <string name="footer_text">Footer Text</string>
+</resources>

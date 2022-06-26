@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="fruit"
+            type="com.muhammed.concatadapter.data.Fruit" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_small"
+        android:sendFruitInfo="@{fruit}">
+
+        <ImageView
+            android:id="@+id/fruit_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:imgRes="@{fruit.fruitImage}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/ic_apricot" />
+
+        <TextView
+            android:id="@+id/fruit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/spacing_small"
+            android:text="@{fruit.fruitName}"
+            android:textSize="@dimen/textSize_large"
+            app:layout_constraintBottom_toBottomOf="@+id/fruit_image"
+            app:layout_constraintStart_toEndOf="@+id/fruit_image"
+            app:layout_constraintTop_toTopOf="@+id/fruit_image"
+            tools:text="@string/apricot" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
